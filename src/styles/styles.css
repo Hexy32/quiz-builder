@@ -1,0 +1,113 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  padding: 1rem 20%;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .version {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+main {
+  margin-block: 1rem;
+}
+
+footer {
+  font-size: 0.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.created-quizzes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quiz {
+  width: 100%;
+  padding: 5px;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.quiz__color {
+  --color: #17468d;
+
+  background-color: var(--color);
+  width: 100px;
+  aspect-ratio: 1 / 1;
+
+  border-radius: 10px;
+}
+
+.quiz__title {
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.quiz__controls-wrapper {
+  margin-left: auto;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.quiz__controls-wrapper > * {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  min-width: 5rem;
+}
+
+.quiz__controls-wrapper span {
+  font-size: 2.5rem;
+}
+
+.create {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  border-radius: 100vh;
+  padding: 1rem;
+  padding-right: 1.5rem;
+
+  font-size: 1.7rem;
+  font-weight: 900;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.create span {
+  font-size: 3rem;
+  display: block;
+}
